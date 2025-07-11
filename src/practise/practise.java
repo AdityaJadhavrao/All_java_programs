@@ -11,21 +11,24 @@ import io.opentelemetry.exporter.logging.SystemOutLogRecordExporter;
 
 public class practise {
 	
-	public static void main(String[] args) 
-	{
-		int[] a = {12,3,4,56,7,8};
-		int largest = Integer.MIN_VALUE;
-		int digit;
-		for(int i=0;i<a.length;i++)
-		{
-			digit = a[i];
-			if(digit>largest)
-			{
-				largest=digit;
-			}
-		}
-		System.out.println("largest element in the array is : "+largest);
-	}
+	public static void main(String [] args){
+        int rows =4;
+        char ch = 'a';
+        for( int i=1; i<=rows; i++){
+
+            for(int j=1; j<=rows-i; j++){
+                System.out.print(" ");
+            }
+
+            for(int j=1; j<=(2*i-1); j++){
+                System.out.print(ch);
+                ch++;
+            }
+
+            System.out.println();
+            ch='a';
+        }
+    }
 }
 
 
